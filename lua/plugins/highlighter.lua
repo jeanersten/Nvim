@@ -1,20 +1,14 @@
-return {
-  "nvim-treesitter/nvim-treesitter",
-  build = ":TSUpdate",
-  main = "nvim-treesitter.configs",
-  config = function()
-    require("nvim-treesitter.install").prefer_git = false
-    require("nvim-treesitter.configs").setup({
-      ensure_installed = { "lua", "c", "cpp", "cmake", "vim", "vimdoc", "markdown" },
-      sync_install = false,
-      auto_install = true,
-      ignore_install = { "javascript" },
-      highlight = {
-        enable = true,
-        additional_vim_regex_highlighting = false,
-      },
-      indent = { enable = true },
-      modules = {},
-    })
-  end,
+return { -- Highlight, edit, and navigate code
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	main = "nvim-treesitter.configs",
+	opts = {
+		ensure_installed = {
+			"lua",
+		},
+		auto_install = true,
+		highlight = {
+			enable = true,
+		},
+	},
 }

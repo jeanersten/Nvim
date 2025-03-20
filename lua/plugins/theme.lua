@@ -1,10 +1,11 @@
 return {
-  "sainnhe/gruvbox-material",
-  priority = 1000,
-  config = function()
-    vim.g.gruvbox_material_background = "hard"
-    vim.g.gruvbox_material_pallete = "mix"
-    vim.cmd([[colorscheme gruvbox-material]])
-    vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#1d2021", fg = "#45403d" })
-  end,
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+		config = function()
+			vim.cmd([[colorscheme tokyonight]])
+		end,
+	},
 }
