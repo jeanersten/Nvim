@@ -15,6 +15,8 @@ return {
 			shell = function()
 				if vim.fn.has("win32") == 1 then
           return "pwsh.exe"
+        else
+          return vim.o.shell
 				end
 			end,
 		})

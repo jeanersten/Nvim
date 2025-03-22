@@ -34,12 +34,15 @@ return {
 					mappings = {
 						["n"] = {
 							["o"] = function()
+                local action_state = require("telescope.actions.state")
+                local entry = action_state.get_selected_entry()
+
 								if vim.fn.has("win32") == 1 then
-									local action_state = require("telescope.actions.state")
-									local entry = action_state.get_selected_entry()
 									if entry and entry.path then
 										vim.fn.jobstart({ "cmd.exe", "/c", "start", "", entry.path }, { detach = true })
 									end
+                elseif vim.fn.has("unix") == 1 then
+                  vim.fn.jobstart({ "xdg-open", entry.path }, { detach = true })
 								end
 							end,
 						},
