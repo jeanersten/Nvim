@@ -36,4 +36,3 @@ vim.wo.number = true
 vim.wo.signcolumn = "yes"
 
 vim.opt.completeopt = "menuone,preview"
-

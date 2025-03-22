@@ -12,6 +12,11 @@ return {
 				border = "curved",
 				winblend = 0,
 			},
+			shell = function()
+				if vim.fn.has("win32") == 1 then
+          return "pwsh.exe"
+				end
+			end,
 		})
 
 		vim.api.nvim_create_autocmd("TermOpen", {
@@ -22,4 +27,3 @@ return {
 		})
 	end,
 }
-
