@@ -19,5 +19,5 @@ require("lazy").setup({
     { import = "plugins" },
   },
   install = { colorscheme = { "kanagawa" } },
-  checker = { enabled = true },
+  checker = { enabled = false },
 })

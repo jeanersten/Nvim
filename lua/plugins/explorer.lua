@@ -29,6 +29,7 @@ return {
           require("telescope.themes").get_dropdown(),
         },
         ["file_browser"] = {
+          no_ignore = true,
           mappings = {
             ["n"] = {
               ["o"] = function()
@@ -44,8 +45,8 @@ return {
       },
     })
 
-    pcall(require("telescope").load_extension, "fzf")
-    pcall(require("telescope").load_extension, "ui-select")
-    pcall(require("telescope").load_extension, "files_browser")
+    require("telescope").load_extension "fzf"
+    require("telescope").load_extension "ui-select"
+    require("telescope").load_extension "file_browser"
   end,
 }
