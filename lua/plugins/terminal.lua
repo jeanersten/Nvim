@@ -12,7 +12,6 @@ return {
 				border = "curved",
 				winblend = 0,
 			},
-			shell = "pwsh.exe",
 		})
 
 		vim.api.nvim_create_autocmd("TermOpen", {

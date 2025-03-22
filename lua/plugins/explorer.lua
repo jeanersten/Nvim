@@ -30,17 +30,7 @@ return {
         },
         ["file_browser"] = {
           no_ignore = true,
-          mappings = {
-            ["n"] = {
-              ["o"] = function()
-                local action_state = require("telescope.actions.state")
-                local entry = action_state.get_selected_entry()
-                if entry and entry.path then
-                  vim.fn.jobstart({ "cmd.exe", "/c", "start", "", entry.path }, { detach = true })
-                end
-              end,
-            },
-          },
+          dir_icon = "",
         },
       },
     })
