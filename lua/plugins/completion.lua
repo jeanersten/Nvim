@@ -43,7 +43,6 @@ return {
 				},
 				completion = {
 					completeopt = "menu,menuone,noinsert,noselect",
-					keyword_length = 2,
 				},
 				mapping = cmp.mapping.preset.insert({
 					["<Tab>"] = cmp.mapping.select_next_item(),
