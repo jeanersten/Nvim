@@ -43,7 +43,7 @@ vim.keymap.set("n", "<Tab>", "<CMD> bnext <CR>", opts)
 vim.keymap.set("n", "<S-Tab>", "<CMD> bprevious <CR>", opts)
 
 -- Terminal
-vim.keymap.set({ "n", "t" }, "<M-g>", "<cmd> ToggleTerm <CR>", opts)
+vim.keymap.set({ "n", "t" }, "<M-t>", "<cmd> ToggleTerm <CR>", opts)
 vim.keymap.set("t", "df", [[<C-\><C-n>]], opts)
 
 -- Explore
