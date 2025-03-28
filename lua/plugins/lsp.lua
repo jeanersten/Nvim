@@ -43,5 +43,9 @@ return {
         fallbackFlags = { "-std=c++23" },
       },
     })
+
+    lsp.cmake.setup({
+      capabilities = capabilities,
+    })
   end,
 }
