@@ -1,3 +1,3 @@
 return {
-  "moll/vim-bbye",
+	"famiu/bufdelete.nvim",
 }
