@@ -52,6 +52,8 @@ vim.keymap.set("n", "<leader>sf", "<CMD> Telescope find_files <CR>", opts)
 vim.keymap.set("n", "<leader>sg", "<CMD> Telescope live_grep <CR>", opts)
 vim.keymap.set("n", "<leader>sb", "<CMD> Telescope buffers <CR>", opts)
 vim.keymap.set("n", "<leader>sh", "<CMD> Telescope help_tags <CR>", opts)
+vim.keymap.set("n", "<leader>ss", "<CMD> Telescope git_status <CR>", opts)
+vim.keymap.set("n", "<leader>sc", "<CMD> Telescope git_commits <CR>", opts)
 
 -- Language Server Protocol
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
