@@ -17,10 +17,10 @@ vim.keymap.set("n", "n", "nzzzv", opts)
 vim.keymap.set("n", "N", "Nzzzv", opts)
 
 -- Sizing
-vim.keymap.set("n", "<Up>", "<CMD> horizontal resize +1 <CR>", opts)
-vim.keymap.set("n", "<Down>", "<CMD> horizontal resize -1 <CR>", opts)
-vim.keymap.set("n", "<Right>", "<CMD> vertical resize +1 <CR>", opts)
-vim.keymap.set("n", "<Left>", "<CMD> vertical resize -1 <CR>", opts)
+vim.keymap.set("n", "<Up>", "<CMD>resize +1 | set cmdheight=1<CR>", opts)
+vim.keymap.set("n", "<Down>", "<CMD>resize -1 | set cmdheight=1<CR>", opts)
+vim.keymap.set("n", "<Right>", "<CMD>vertical resize +1 | set cmdheight=1<CR>", opts)
+vim.keymap.set("n", "<Left>", "<CMD>vertical resize -1 | set cmdheight=1<CR>", opts)
 
 -- Windows
 vim.keymap.set("n", "<leader>wh", "<C-w>s", opts)
@@ -79,7 +79,7 @@ vim.keymap.set("n", "<leader>cl", vim.diagnostic.setloclist, opts)
 vim.keymap.set("n", ";", ":", {})
 vim.keymap.set("i", "df", "<ESC>", {})
 vim.keymap.set("n", "x", '"_x', opts)
-vim.keymap.set("v", "p", '"_dgP', opts)
+vim.keymap.set("v", "p", '"_dP', opts)
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 vim.keymap.set("n", "<leader>sn", "<CMD> noautocmd w <CR>", opts)

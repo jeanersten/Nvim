@@ -35,6 +35,7 @@ return {
         vim.keymap.set("n", "<ScrollWheelDown>", "<Nop>", { buffer = true })
       end,
     })
+
   end,
 }
 

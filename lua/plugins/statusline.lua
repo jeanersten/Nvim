@@ -2,7 +2,7 @@ return {
 	"nvim-lualine/lualine.nvim",
 	config = function()
 		local default = {
-			filetypes = { "minifiles", "toggleterm", "TelescopePrompt" },
+			filetypes = { "minifiles", "toggleterm", "TelescopePrompt", "alpha" },
 			sections = {
 				lualine_a = { "mode" },
 				lualine_b = { "branch" },
@@ -17,9 +17,9 @@ return {
 				theme = "auto",
 				component_separators = { left = "", right = "" },
 				section_separators = { left = "", right = "" },
-				disabled_filetypes = {
-					statusline = { "alpha" },
-				},
+				-- disabled_filetypes = {
+				-- 	statusline = { "alpha" },
+				-- },
 				always_show_tabline = true,
 				globalstatus = true,
 			},
