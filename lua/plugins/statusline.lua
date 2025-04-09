@@ -5,7 +5,6 @@ return {
 			filetypes = { "minifiles", "toggleterm", "TelescopePrompt", "alpha" },
 			sections = {
 				lualine_a = { "mode" },
-				lualine_b = { "branch" },
 				lualine_y = { "progress" },
 				lualine_z = { "location" },
 			},
@@ -36,4 +35,3 @@ return {
 		})
 	end,
 }
-
